@@ -1,19 +1,343 @@
-<!doctype html>
-<html>
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<title>My static Space</title>
-		<link rel="stylesheet" href="style.css" />
-	</head>
-	<body>
-		<div class="card">
-			<h1>Welcome to your static Space!</h1>
-			<p>You can modify this app directly by editing <i>index.html</i> in the Files and versions tab.</p>
-			<p>
-				Also don't forget to check the
-				<a href="https://huggingface.co/docs/hub/spaces" target="_blank">Spaces documentation</a>.
-			</p>
-		</div>
-	</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retail Evolution Guru | Pro Ganguly</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#1a365d',
+              secondary: '#2c5282',
+              accent: '#4299e1',
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body class="bg-gradient-to-br from-gray-50 to-blue-50">
+  <!-- Navigation -->
+  <nav class="bg-white shadow-lg">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex justify-between">
+        <div class="flex space-x-7">
+          <a href="#" class="flex items-center py-4 px-2">
+            <span class="font-bold text-primary text-2xl">RetailEvolution<span class="text-accent">Guru</span></span>
+          </a>
+        </div>
+        <div class="hidden md:flex items-center space-x-10">
+          <a href="#about" class="py-4 px-2 text-gray-700 hover:text-accent transition duration-300">About</a>
+          <a href="#experience" class="py-4 px-2 text-gray-700 hover:text-accent transition duration-300">Experience</a>
+          <a href="#services" class="py-4 px-2 text-gray-700 hover:text-accent transition duration-300">What I Offer</a>
+          <a href="#contact" class="py-4 px-2 text-white bg-accent rounded-lg hover:bg-secondary transition duration-300">Book a Call</a>
+        </div>
+        <div class="md:hidden flex items-center">
+          <button class="outline-none mobile-menu-button">
+            <i data-feather="menu" class="text-gray-700"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="py-20 px-4">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h1 class="text-4xl md:text-5xl font-bold text-primary mb-6">Pro Ganguly</h1>
+        <h2 class="text-2xl md:text-3xl font-semibold text-secondary mb-8">Retail Consultant & Strategic Advisor</h2>
+        <p class="text-lg text-gray-700 mb-8">Helping brands navigate the complex world of UK retail with insider expertise and proven strategies.</p>
+        <a href="#contact" class="bg-accent hover:bg-secondary text-white font-bold py-3 px-8 rounded-lg transition duration-300 inline-flex items-center">
+          Book Strategy Call
+          <i data-feather="arrow-right" class="ml-2"></i>
+        </a>
+      </div>
+      <div class="relative">
+        <div class="bg-accent h-80 w-80 rounded-full mx-auto opacity-10 absolute -z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
+        <img src="http://static.photos/office/640x360/42" alt="Pro Ganguly" class="rounded-lg shadow-xl w-full max-w-md mx-auto">
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 px-4 bg-white">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-center text-primary mb-12">About Me</h2>
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="order-1 md:order-none">
+          <img src="http://static.photos/people/640x360/123" alt="Pro Ganguly Portrait" class="rounded-lg shadow-xl w-full">
+        </div>
+        <div>
+          <p class="text-lg text-gray-700 mb-6">With over 15 years of experience across major UK retailers, I bring unparalleled insight into the retail ecosystem.</p>
+          <p class="text-lg text-gray-700 mb-6">My journey has taken me through every level of retail management, from store operations to billion-pound category leadership.</p>
+          <p class="text-lg text-gray-700 mb-8">Now I leverage this experience to help brands navigate retail complexities with confidence.</p>
+          <div class="flex items-center space-x-4">
+            <a href="https://www.linkedin.com/in/proganguly" target="_blank" class="flex items-center text-accent hover:text-secondary transition duration-300">
+              <i data-feather="linkedin" class="mr-2"></i>
+              Connect on LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="py-20 px-4 bg-gray-50">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-center text-primary mb-12">Previous Roles</h2>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Tesco Card -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+          <div class="bg-primary p-4 flex items-center">
+            <div class="bg-white p-2 rounded-full mr-4">
+              <i data-feather="shopping-bag" class="text-primary"></i>
+            </div>
+            <h3 class="text-white font-bold text-xl">Tesco</h3>
+          </div>
+          <div class="p-6">
+            <ul class="list-disc pl-5 space-y-2 text-gray-700">
+              <li>8+ years in various Buying roles</li>
+              <li>Covered Ambient Grocery, Fresh Foods, Health & Beauty</li>
+              <li>Worked with largest FMCG brands globally</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Asda Card -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+          <div class="bg-secondary p-4 flex items-center">
+            <div class="bg-white p-2 rounded-full mr-4">
+              <i data-feather="dollar-sign" class="text-secondary"></i>
+            </div>
+            <h3 class="text-white font-bold text-xl">Asda</h3>
+          </div>
+          <div class="p-6">
+            <ul class="list-disc pl-5 space-y-2 text-gray-700">
+              <li>Led the £1bn Dairy category</li>
+              <li>Negotiated £450m milk & cheese contract</li>
+              <li>Expanded World Foods to 100+ stores</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Poundland Card -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+          <div class="bg-accent p-4 flex items-center">
+            <div class="bg-white p-2 rounded-full mr-4">
+              <i data-feather="trending-up" class="text-accent"></i>
+            </div>
+            <h3 class="text-white font-bold text-xl">Poundland</h3>
+          </div>
+          <div class="p-6">
+            <ul class="list-disc pl-5 space-y-2 text-gray-700">
+              <li>Led £600m FMCG Food category</li>
+              <li>Developed discounter-specific ranges</li>
+              <li>Youngest Trading Controller in company history</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Morrisons Card -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+          <div class="bg-primary p-4 flex items-center">
+            <div class="bg-white p-2 rounded-full mr-4">
+              <i data-feather="award" class="text-primary"></i>
+            </div>
+            <h3 class="text-white font-bold text-xl">Morrisons</h3>
+          </div>
+          <div class="p-6">
+            <ul class="list-disc pl-5 space-y-2 text-gray-700">
+              <li>Graduate Management scheme</li>
+              <li>Promoted to Deputy Store Manager</li>
+              <li>Developed operational expertise</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-20 px-4 bg-white">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-center text-primary mb-12">What I Offer</h2>
+      
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Service 1 -->
+        <div class="bg-gray-50 p-8 rounded-lg border-l-4 border-accent hover:shadow-md transition duration-300">
+          <div class="flex items-center mb-4">
+            <div class="bg-accent text-white p-3 rounded-full mr-4">
+              <i data-feather="users"></i>
+            </div>
+            <h3 class="text-xl font-bold text-primary">Market Access & Network</h3>
+          </div>
+          <ul class="list-disc pl-8 text-gray-700 space-y-2">
+            <li>Relationships with UK buyers in core retail</li>
+            <li>1600+ LinkedIn connections in retail industry</li>
+            <li>Buyer trust through shared experience</li>
+          </ul>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="bg-gray-50 p-8 rounded-lg border-l-4 border-primary hover:shadow-md transition duration-300">
+          <div class="flex items-center mb-4">
+            <div class="bg-primary text-white p-3 rounded-full mr-4">
+              <i data-feather="globe"></i>
+            </div>
+            <h3 class="text-xl font-bold text-primary">Cultural & Consumer Insights</h3>
+          </div>
+          <ul class="list-disc pl-8 text-gray-700 space-y-2">
+            <li>Understand what UK shoppers want</li>
+            <li>Insight into product success/failure factors</li>
+            <li>Localisation to align with UK trends</li>
+          </ul>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="bg-gray-50 p-8 rounded-lg border-l-4 border-secondary hover:shadow-md transition duration-300">
+          <div class="flex items-center mb-4">
+            <div class="bg-secondary text-white p-3 rounded-full mr-4">
+              <i data-feather="file-text"></i>
+            </div>
+            <h3 class="text-xl font-bold text-primary">Regulatory Navigation</h3>
+          </div>
+          <ul class="list-disc pl-8 text-gray-700 space-y-2">
+            <li>Ensure compliance with all regulations</li>
+            <li>Prevent delays or costly fines</li>
+            <li>Streamline UK certifications and audits</li>
+          </ul>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="bg-gray-50 p-8 rounded-lg border-l-4 border-accent hover:shadow-md transition duration-300">
+          <div class="flex items-center mb-4">
+            <div class="bg-accent text-white p-3 rounded-full mr-4">
+              <i data-feather="dollar-sign"></i>
+            </div>
+            <h3 class="text-xl font-bold text-primary">Retail Negotiation Skills</h3>
+          </div>
+          <ul class="list-disc pl-8 text-gray-700 space-y-2">
+            <li>Negotiate with retailers effectively</li>
+            <li>Navigate pricing models</li>
+            <li>Manage marketing support expectations</li>
+          </ul>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="bg-gray-50 p-8 rounded-lg border-l-4 border-primary hover:shadow-md transition duration-300 md:col-span-2">
+          <div class="flex items-center mb-4">
+            <div class="bg-primary text-white p-3 rounded-full mr-4">
+              <i data-feather="clock"></i>
+            </div>
+            <h3 class="text-xl font-bold text-primary">Risk Reduction & Faster Market Entry</h3>
+          </div>
+          <ul class="list-disc pl-8 text-gray-700 space-y-2">
+            <li>Reduce costly trial-and-error mistakes</li>
+            <li>Avoid common international pitfalls</li>
+            <li>Craft tailored go-to-market strategy</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section id="contact" class="py-20 px-4 bg-gradient-to-r from-primary to-secondary text-white">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">Ready to Accelerate Your Retail Strategy?</h2>
+      <p class="text-xl mb-8 opacity-90">Book a call to discuss how we can work together to navigate the UK retail landscape.</p>
+      <div class="max-w-md mx-auto">
+        <form class="space-y-4">
+          <div>
+            <input type="text" placeholder="Your Name" class="w-full px-4 py-3 rounded-lg text-gray-800">
+          </div>
+          <div>
+            <input type="email" placeholder="Your Email" class="w-full px-4 py-3 rounded-lg text-gray-800">
+          </div>
+          <div>
+            <input type="tel" placeholder="Your Phone" class="w-full px-4 py-3 rounded-lg text-gray-800">
+          </div>
+          <div>
+            <select class="w-full px-4 py-3 rounded-lg text-gray-800">
+              <option>Preferred Meeting Time</option>
+              <option>Morning (9am-12pm)</option>
+              <option>Afternoon (1pm-5pm)</option>
+              <option>Evening (6pm-8pm)</option>
+            </select>
+          </div>
+          <button type="submit" class="w-full bg-white text-primary font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition duration-300">
+            Book My Strategy Call
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12 px-4">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid md:grid-cols-3 gap-8">
+        <div>
+          <h3 class="text-xl font-bold mb-4">Retail Evolution Guru</h3>
+          <p>Strategic retail consulting for brands looking to succeed in the UK market.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="#about" class="hover:text-accent transition duration-300">About</a></li>
+            <li><a href="#experience" class="hover:text-accent transition duration-300">Experience</a></li>
+            <li><a href="#services" class="hover:text-accent transition duration-300">Services</a></li>
+            <li><a href="#contact" class="hover:text-accent transition duration-300">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold mb-4">Connect</h3>
+          <div class="flex space-x-4">
+            <a href="https://www.linkedin.com/in/proganguly" target="_blank" class="hover:text-accent transition duration-300">
+              <i data-feather="linkedin"></i>
+            </a>
+            <a href="#" class="hover:text-accent transition duration-300">
+              <i data-feather="mail"></i>
+            </a>
+            <a href="#" class="hover:text-accent transition duration-300">
+              <i data-feather="phone"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+        <p>&copy; 2023 Retail Evolution Guru by Pro Ganguly. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    feather.replace();
+    
+    // Mobile menu toggle
+    const mobileMenuButton = document.querySelector('.mobile-menu-button');
+    const mobileMenu = document.createElement('div');
+    mobileMenu.className = 'hidden mobile-menu bg-white shadow-lg md:hidden p-4 absolute w-full';
+    mobileMenu.innerHTML = `
+      <a href="#about" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">About</a>
+      <a href="#experience" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Experience</a>
+      <a href="#services" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">What I Offer</a>
+      <a href="#contact" class="block py-2 px-4 text-white bg-accent rounded-lg my-2">Book a Call</a>
+    `;
+    document.body.appendChild(mobileMenu);
+    
+    mobileMenuButton.addEventListener('click', function() {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
 </html>
